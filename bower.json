@@ -1,0 +1,24 @@
+{
+  "name": "synservice",
+  "version": "0.0.0",
+  "authors": [
+    "Sandy Vanderbleek <sandy.vanderbleek@gmail.com>"
+  ],
+  "description": "Treat multiple services as a unified service",
+  "main": "synservice.js",
+  "keywords": [
+    "combine",
+    "join",
+    "service",
+    "api",
+    "response"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
