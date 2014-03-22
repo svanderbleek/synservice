@@ -1,14 +1,16 @@
 # Synservice
 
-Combine responses from JSON services initialized with different
-parameters.
+Combine responses from services initialized with different
+parameters. Raw services need to be wrapped in initializing functions that
+proxy methods and return parsed responses as objects.
 
-# Example
+## Example
 
-From the AWS JS SDK:
+From the AWS SDK for JavaScript:
 
 ```javascript
-  Synservice.new(AWS.ec2, [{region: 'us-east-1'}, {region:
-'us-west-2'}]);
-  combinedResponses = Synservice.callMethod('describeVolumes');
+  var service = AWS.EC2;
+  var parameterGroups = [{region: 'us-east-1'}, {region: 'us-west-2'}];
+  var services = Synservice.new(service, parameterGroups);
+  var combinedResponses = services.callMethod('describeVolumes');
 ```

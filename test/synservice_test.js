@@ -18,7 +18,7 @@ tape('with service and parameterGroups', function(test) {
   Service.prototype.method = function(a1, a2) {
     test.equal(a1, 1);
     test.equal(a2, 2);
-    return JSON.stringify({c: [this.parameters.p]});
+    return {c: [this.parameters.p]};
   }
   var parameterGroups = [{p: 3}, {p: 4}];
   var synservice = new Synservice(Service, parameterGroups);
