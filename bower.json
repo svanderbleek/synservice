@@ -1,11 +1,11 @@
 {
   "name": "synservice",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "authors": [
     "Sandy Vanderbleek <sandy.vanderbleek@gmail.com>"
   ],
   "description": "Treat multiple services as a unified service",
-  "main": "synservice.js",
+  "main": "lib/synservice.js",
   "keywords": [
     "combine",
     "join",
